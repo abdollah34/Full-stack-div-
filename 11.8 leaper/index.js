@@ -1,17 +1,14 @@
-var year = prompt("what is the year and ill tell you if it leaper!");
-
-function check(year) {
+function isLeap(year) {
     if (year % 4 === 0) {
         if (year % 100 === 0) {
             if (year % 400 === 0) {
-                alert(year + " is leaper");
+                return "Leap year.";
             } else {
-                alert(year + " is not leaper");
+                return " Not leap year.";
             }
-        } else {
-            alert(year + " is not leaper");
         }
+        return " Not leap year.";
     } else {
-        alert(year + " is not leaper");
+        return " Not leap year.";
     }
 }
